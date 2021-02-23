@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <div id="particles-js"></div>
+    <div class="container">
+      <div class="header">
+        <div class="pw" id="pw">
+          <button id="copy">Copy</button>
+        </div>
+      </div>
+      <div class="body">
+        <div class="form-control">
+          <label for="leng">Password lenght</label>
+          <input id="leng" type="number" value="20" min="4" max="40" />
+        </div>
+        <div class="form-control">
+          <label for="upper">Contain Uppercase letters</label>
+          <input id="upper" type="checkbox" />
+        </div>
+        <div class="form-control">
+          <label for="lower">Contain Lower letters</label>
+          <input id="lower" type="checkbox" />
+        </div>
+        <div class="form-control">
+          <label for="number">Contain numbers</label>
+          <input id="number" type="checkbox" />
+        </div>
+        <div class="form-control">
+          <label for="symbol">Contain symbols</label>
+          <input id="symbol" type="checkbox" />
+        </div>
+        <button class="generate" id="generate">Generate Password</button>
+      </div>
+    </div>
+    <script src="./particles/particles.js"></script>
+    <script src="./particles/particles.min.js"></script>
+    <script src="./particles/app.js"></script>
+  </body>
+</html>
