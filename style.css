@@ -27,6 +27,7 @@ body {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
+    flex-direction: column;
 }
 
 .background {
@@ -89,6 +90,7 @@ body {
 
 .generate {
     display: block;
+    color: white;
     background-color: #921724;
     border: none;
     font-weight: bold;
@@ -98,10 +100,12 @@ body {
     cursor: pointer;
     font-family: 'Noto Sans JP', sans-serif;
     margin-top: 1.2rem;
+    transition: all 1s ease-in-out;
 
 }
 
 .generate:hover {
-    color: white;
-    transition: 1s ease-in-out;
+    color: black;
+    background-color: #b62433;
+    transition: all 1s ease-in-out;
 }
